@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="650.0" maxWidth="850.0" prefHeight="650.0" prefWidth="850.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pdo.booking.system.controller.HomeController">
+   <center>
+      <JFXTabPane stylesheets="@../css/default-theme.css" BorderPane.alignment="CENTER">
+         <tabs>
+            <Tab text="Active Rooms">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <BorderPane prefHeight="390.0" prefWidth="700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <center>
+                              <GridPane BorderPane.alignment="CENTER">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                                       <children>
+                                          <Label text="Germany Building">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <FlowPane fx:id="gBuilding" hgap="5.0" prefHeight="200.0" prefWidth="200.0" vgap="5.0" />
+                                       </children>
+                                       <padding>
+                                          <Insets top="10.0" />
+                                       </padding>
+                                    </VBox>
+                                    <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" spacing="10.0" GridPane.columnIndex="1">
+                                       <children>
+                                          <Label text="Austrilla Building">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <FlowPane fx:id="aBuilding" hgap="5.0" prefHeight="200.0" prefWidth="200.0" vgap="5.0" />
+                                       </children>
+                                       <padding>
+                                          <Insets top="10.0" />
+                                       </padding>
+                                    </VBox>
+                                    <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="210.0" prefHeight="200.0" prefWidth="100.0" spacing="10.0" GridPane.rowIndex="2">
+                                       <children>
+                                          <Label text="Japan Building">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <FlowPane fx:id="jBuilding" hgap="5.0" prefHeight="200.0" prefWidth="200.0" vgap="5.0" />
+                                       </children>
+                                       <padding>
+                                          <Insets top="10.0" />
+                                       </padding>
+                                    </VBox>
+                                    <VBox alignment="TOP_CENTER" layoutX="353.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <children>
+                                          <Label text="Guest House">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <FlowPane fx:id="gHBuilding" hgap="5.0" prefHeight="200.0" prefWidth="200.0" vgap="5.0" />
+                                       </children>
+                                       <padding>
+                                          <Insets top="10.0" />
+                                       </padding>
+                                    </VBox>
+                                    <VBox alignment="TOP_CENTER" layoutX="353.0" layoutY="210.0" prefHeight="200.0" prefWidth="100.0" spacing="10.0" GridPane.rowIndex="1">
+                                       <children>
+                                          <Label text="Girl Dormantry">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <FlowPane fx:id="gDBuilding" hgap="5.0" prefHeight="200.0" prefWidth="200.0" vgap="5.0" />
+                                       </children>
+                                       <padding>
+                                          <Insets top="10.0" />
+                                       </padding>
+                                    </VBox>
+                                 </children>
+                              </GridPane>
+                           </center>
+                        </BorderPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Visitor Form">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <HBox alignment="TOP_CENTER" prefHeight="605.0" prefWidth="685.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="350.0" spacing="30.0">
+                                 <children>
+                                    <JFXTextField fx:id="nameField" focusColor="BLACK" promptText="Full Name" unFocusColor="BLACK">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font></JFXTextField>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="200.0" spacing="10.0">
+                                       <children>
+                                          <JFXDatePicker fx:id="birthDatePicker" defaultColor="BLACK" prefWidth="175.0" promptText="Birthday" />
+                                          <JFXCheckBox fx:id="maleCheck" checkedColor="BLACK" text="Male" unCheckedColor="BLACK">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font></JFXCheckBox>
+                                          <JFXCheckBox fx:id="femaleCheck" checkedColor="BLACK" text="Female" unCheckedColor="BLACK">
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font></JFXCheckBox>
+                                       </children>
+                                    </HBox>
+                                    <JFXTextField fx:id="passportNumberField" focusColor="BLACK" promptText="Passport Number" unFocusColor="BLACK">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font></JFXTextField>
+                                    <JFXTextField fx:id="visaNumberField" focusColor="BLACK" layoutX="20.0" layoutY="20.0" promptText="Visa Number" unFocusColor="BLACK">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font></JFXTextField>
+                                    <JFXTextField fx:id="nationField" focusColor="BLACK" layoutX="20.0" layoutY="55.0" promptText="Nationality" unFocusColor="BLACK">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font></JFXTextField>
+                                    <JFXTextField fx:id="organizationField" focusColor="BLACK" promptText="Name of Organization" unFocusColor="BLACK">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font></JFXTextField>
+                                    <HBox prefHeight="30.0" prefWidth="200.0">
+                                       <children>
+                                          <JFXDatePicker fx:id="arrivalDatePicker" defaultColor="BLACK" prefWidth="175.0" promptText="Arrival Date" />
+                                          <JFXDatePicker fx:id="departureDatePicker" defaultColor="BLACK" prefWidth="175.0" promptText="Departure Date" />
+                                       </children>
+                                    </HBox>
+                                    <JFXTextArea fx:id="addressField" focusColor="BLACK" prefHeight="108.0" prefWidth="323.0" promptText="Permanent Address" unFocusColor="BLACK">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font></JFXTextArea>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </VBox>
+                              <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="350.0" spacing="30.0">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <children>
+                                    <JFXTextField fx:id="contactNumberField" focusColor="BLACK" promptText="Contact Number" unFocusColor="BLACK">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font></JFXTextField>
+                                    <JFXTextField fx:id="emailField" focusColor="BLACK" promptText="Email" unFocusColor="BLACK">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font></JFXTextField>
+                                    <JFXTextField fx:id="roomField" focusColor="BLACK" promptText="Room Number" unFocusColor="BLACK">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font></JFXTextField>
+                                    <JFXTextField fx:id="staffField" focusColor="BLACK" promptText="Name of PDO Staff" unFocusColor="BLACK">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font></JFXTextField>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Room Records">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+   </center>
+   <right>
+      <VBox alignment="TOP_CENTER" prefHeight="640.0" prefWidth="150.0">
+         <children>
+            <ImageView fitHeight="140.0" fitWidth="140.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../files/Logo_PDO%202.jpg" />
+               </image>
+            </ImageView>
+            <JFXButton prefHeight="55.0" prefWidth="150.0" styleClass="side-button" stylesheets="@../css/default-theme.css" text="Rooms">
+               <font>
+                  <Font size="15.0" />
+               </font></JFXButton>
+            <JFXButton layoutX="20.0" layoutY="305.0" prefHeight="55.0" prefWidth="150.0" styleClass="side-button" stylesheets="@../css/default-theme.css" text="Buildings">
+               <font>
+                  <Font size="15.0" />
+               </font></JFXButton>
+            <JFXButton layoutX="20.0" layoutY="330.0" prefHeight="55.0" prefWidth="150.0" styleClass="side-button" stylesheets="@../css/default-theme.css" text="Visitors">
+               <font>
+                  <Font size="15.0" />
+               </font></JFXButton>
+            <JFXButton layoutX="15.0" layoutY="124.0" prefHeight="55.0" prefWidth="150.0" styleClass="side-button" stylesheets="@../css/default-theme.css" text="Members">
+               <font>
+                  <Font size="15.0" />
+               </font></JFXButton>
+            <JFXButton layoutX="15.0" layoutY="238.0" prefHeight="55.0" prefWidth="150.0" styleClass="side-button" stylesheets="@../css/default-theme.css" text="Settings">
+               <font>
+                  <Font size="15.0" />
+               </font></JFXButton>
+            <JFXButton layoutX="18.0" layoutY="295.0" prefHeight="55.0" prefWidth="150.0" styleClass="side-button" stylesheets="@../css/default-theme.css" text="Exit">
+               <font>
+                  <Font size="15.0" />
+               </font></JFXButton>
+         </children>
+         <opaqueInsets>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </opaqueInsets>
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+      </VBox>
+   </right>
+   <padding>
+      <Insets bottom="5.0" left="10.0" right="5.0" top="5.0" />
+   </padding>
+</BorderPane>
